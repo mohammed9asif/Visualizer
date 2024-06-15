@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+
+    <!-- creating a nav bar  -->
+    <nav class="nav-bar">
+        <p>Sorting Visualizer</p>
+    </nav>
+
+    <div class="flex-container">
+
+        <div id="input-bars" class="left-conatiner">
+           
+        </div>
+    
+        <div id="right-container">
+            <div class="range-inputs">
+    
+                <label for="input-size">Size : <input type="range" name="input-size" id="input-size" min="5" max="80" value="30"></label>
+        
+                <label for="visualize-speed">Speed: <input type="range" name="visualize-speed" id="input-speed" value ="100"></label>
+        
+            </div>
+           
+            <div class="options">
+                <button id="new_array">New Array</button>
+                <button id="stop_sorting">Stop Sorting</button>
+            </div>
+        
+            <!-- <div class="sorting-algos options">
+                <div id="bubble-sort">Bubble sort</div>
+                <div id="selection-sort">Selection sort</div>
+                <div id="insertion-sort">Insertion sort</div>
+                <div id="merge-sort">Merge sort</div>
+                <div id="quick-sort">Quick sort</div>
+                <div id="heap-sort">Heap sort</div>
+            </div> -->
+
+            <div class="sorting-algos options">
+                <button id="bubble-sort">Bubble sort</button>
+                <button id="selection-sort">Selection sort</button>
+                <button id="insertion-sort">Insertion sort</button>
+                <button id="merge-sort">Merge sort</button>
+                <button id="quick-sort">Quick sort</button>
+                <button id="heap-sort">Heap sort</button>
+            </div>
+            
+        </div>
+    
+    
+    </div>
+
+    <div id="footer"> Developed by <a href="google.com">R Asif</a></div>
+   
+    <script src="app.js"></script>
+    <script src = "algorithms/bubblesort.js" ></script>
+    <script src = "algorithms/selectionsort.js" ></script>
+    <script src = "algorithms/insertionsort.js" ></script>
+    <script src = "algorithms/mergesort.js" ></script>
+    <script src = "algorithms/quicksort.js" ></script>
+    <script src = "algorithms/heapsort.js" ></script>
+    
+</body>
+</html>
